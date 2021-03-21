@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: black;
+    }
+    .box{
+        position: relative;
+        background-color: bisque;
+        width:200px;
+        height: 50px;
+        margin: 10px;
+
+        /* Animation */
+        animation-name: box-animation1;
+        animation-duration: 11s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+
+        /* Transition */
+        transition-property: all;
+        transition-duration: 2s;
+    }
+    .box2{
+        position: relative;
+        background-color:coral;
+        width:200px;
+        height: 50px;
+        margin: 10px;
+
+        /* Animation */
+        animation-name: box-animation1;
+        animation-duration: 7s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+
+        /* Transition */
+        transition-property: all;
+        transition-duration: 2s;
+    }
+    .box3{
+        position: relative;
+        background-color: brown;
+        width:200px;
+        height: 50px;
+        margin: 10px;
+        animation-name: box-animation1;
+        animation-duration: 18s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+
+        transition-property: all;
+        transition-duration: 2s;
+    }
+
+    .box:hover, .box2:hover, .box3:hover{
+        background-color:green
+    }
+
+    @keyframes box-animation1{
+
+        from{
+            top: 0;
+        }
+        to{
+            top: 200px;
+            width: 600px;
+            background-color: burlywood;
+        }
+    }
+</style>
+<body>
+    <div class="box"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>
